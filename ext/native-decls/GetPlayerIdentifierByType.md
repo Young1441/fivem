@@ -1,5 +1,5 @@
----
-ns: CFX
+                ---
+ns: CFX_3                    
 apiset: server
 ---
 ## GET_PLAYER_IDENTIFIER_BY_TYPE
@@ -52,4 +52,7 @@ EventHandlers["playerJoining"] += new Action<Player>(SetLicense);
 private void SetLicense([FromSource]Player player) {
     PlayerLicenses.Add(player.Handle, GetPlayerIdentifierByType(player.Handle, "license"));
 }
-```
+```REGISTER_RESOURCE_BUILD_TASK_FACTORY
+TASK_COMBAT_PED
+
+wEE
